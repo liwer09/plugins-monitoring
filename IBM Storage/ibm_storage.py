@@ -11,7 +11,7 @@ def ssh_execution(command, ip, password):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try:
-        ssh.connect(ip, username = "nagios", password = password)
+        ssh.connect(ip, username = "", password = password)
         shell = ssh.invoke_shell()
     except:
         print("SSH can't connect")
