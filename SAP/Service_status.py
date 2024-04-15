@@ -1,9 +1,4 @@
-import paramiko
-import sys
-import re
-import os
 import subprocess
-import time
 #Creamos variables necesarias.
 final_status = 0
 final_output = ""
